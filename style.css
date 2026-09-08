@@ -14,3 +14,6 @@
 .ds4 .face {
     filter: none !important;
 }
+.controller.ds4 {
+    filter: hue-rotate(180deg) !important;
+}
