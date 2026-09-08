@@ -16,3 +16,6 @@
 .ds4 .dpad {
     transform: translate(-62px, -62px) !important;
 }
+.ds4 .sticks {
+    transform: translateY(-38px) !important;
+}
