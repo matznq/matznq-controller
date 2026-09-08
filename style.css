@@ -1,15 +1,1 @@
-.controller.ds4::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    width: 806px;
-    height: 598px;
-
-    background: url("https://matznq.github.io/matznq-controller/matznq-shell-806x598.png?v=1")
-                no-repeat 0 0;
-
-    pointer-events: none;
-}
 
