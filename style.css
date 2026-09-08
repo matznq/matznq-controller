@@ -1,0 +1,41 @@
+/* MATZNQ PS4 SHELL OVERLAY */
+
+/* Normalen PS4-Controller unverändert lassen */
+.controller.ds4.edit {
+    position: relative !important;
+}
+
+/* MATZNQ-Gehäuse über den originalen Controller legen */
+.controller.ds4.edit::after {
+    content: "" !important;
+
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+
+    width: 806px !important;
+    height: 598px !important;
+
+    background-image: url("https://matznq.github.io/matznq-controller/matznq-shell.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: 0 0 !important;
+    background-size: 806px 598px !important;
+
+    pointer-events: none !important;
+
+    /* Gehäuse über Basis, aber unter den Tasten */
+    z-index: 2 !important;
+}
+
+/* Alle ORIGINALEN GamePad-Viewer-Bedienelemente darüber */
+.ds4 .triggers,
+.ds4 .bumpers,
+.ds4 .touchpad,
+.ds4 .arrows,
+.ds4 .abxy,
+.ds4 .sticks,
+.ds4 .dpad,
+.ds4 .meta {
+    position: absolute;
+    z-index: 5 !important;
+}
