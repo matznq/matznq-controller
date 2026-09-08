@@ -1,31 +1,47 @@
+/* MATZNQ CONTROLLER BASE */
 .controller.ds4.edit {
     background: url("https://matznq.github.io/matznq-controller/base.custom.png?v=2") no-repeat 0 0 !important;
     background-size: 806px 598px !important;
     width: 806px !important;
     height: 598px !important;
 }
+
+
+/* D-PAD */
 .ds4 .dpad {
     transform: translate(-62px, -62px) !important;
 }
+
+
+/* ANALOG STICKS */
 .ds4 .sticks {
     transform: translateY(-76px) !important;
 }
+
+
+/* △ ○ × □ */
 .ds4 .abxy {
     transform: translate(55px, -68px) !important;
 }
+
+
+/* L2 + R2 CONTAINER */
 .ds4 .triggers {
     transform: translateY(28px) !important;
 }
 
-.ds4 .bumpers {
-    transform: translateY(28px) !important;
+
+/* L2 + R2 */
+.ds4 .trigger {
+    background: #17191f !important;
+    background-image: none !important;
+    width: 120px !important;
+    height: 38px !important;
+    border-radius: 18px 18px 8px 8px !important;
 }
 
-.ds4 .trigger,
-.ds4 .bumper {
-    opacity: 1 !important;
-    background: #17191f !important;
-    width: 145px !important;
-    height: 32px !important;
-    border-radius: 14px 14px 7px 7px !important;
+
+/* L1 + R1 CONTAINER */
+.ds4 .bumpers {
+    transform: translateY(28px) !important;
 }
