@@ -1,12 +1,14 @@
 /* =========================================
-   MATZNQ PS4 CONTROLLER - FINAL LAYOUT
+   MATZNQ PS4 CONTROLLER
+   KOMPLETT AUSGERICHTETER STAND
    ========================================= */
 
 
-/* BASE */
+/* CONTROLLER BASE */
 .controller.ds4.edit {
-    background: url("https://matznq.github.io/matznq-controller/base.custom.png?v=3")
+    background: url("https://matznq.github.io/matznq-controller/base.custom.png?v=4")
                 no-repeat 0 0 !important;
+
     background-size: 806px 598px !important;
 
     width: 806px !important;
@@ -16,10 +18,11 @@
 
 /* =========================================
    D-PAD
+   vorher zu weit links -> nach rechts
    ========================================= */
 
 .ds4 .dpad {
-    transform: translate(-62px, -62px) !important;
+    transform: translate(-35px, -62px) !important;
 }
 
 
@@ -27,38 +30,59 @@
    ANALOG STICKS
    ========================================= */
 
+/* gesamte Stick-Gruppe */
 .ds4 .sticks {
-    transform: translateY(-76px) !important;
+    transform: translateY(-58px) !important;
+}
+
+
+/* linker Stick:
+   war mittig, aber zu weit oben
+*/
+.ds4 .stick.left {
+    position: relative !important;
+    top: 16px !important;
+}
+
+
+/* rechter Stick:
+   ebenfalls runter + nach links
+*/
+.ds4 .stick.right {
+    position: relative !important;
+    left: -22px !important;
+    top: 16px !important;
 }
 
 
 /* =========================================
    △ ○ × □
+   vorher zu weit rechts -> nach links
    ========================================= */
 
 .ds4 .abxy {
-    transform: translate(55px, -68px) !important;
+    transform: translate(18px, -68px) !important;
 }
 
 
 /* =========================================
-   L2 / R2
+   L2 + R2
    ========================================= */
 
 .ds4 .triggers {
     position: absolute !important;
 
     width: 540px !important;
-    height: 42px !important;
+    height: 40px !important;
 
     left: 133px !important;
-    top: 28px !important;
+
+    /* deutlich weiter nach oben */
+    top: -8px !important;
 
     transform: none !important;
 }
 
-
-/* L2 + R2 Grundform */
 
 .ds4 .trigger {
     width: 112px !important;
@@ -69,19 +93,17 @@
 
     border: 2px solid #008cff !important;
 
-    border-radius: 22px 22px 10px 10px !important;
+    border-radius: 20px 20px 9px 9px !important;
 
     opacity: 1 !important;
 
     box-sizing: border-box !important;
 
     box-shadow:
-        inset 0 -4px 8px rgba(0,0,0,.65),
-        0 0 5px rgba(0,140,255,.35) !important;
+        inset 0 -4px 7px rgba(0,0,0,.65),
+        0 0 5px rgba(0,140,255,.4) !important;
 }
 
-
-/* Position links / rechts */
 
 .ds4 .trigger.left {
     float: left !important;
@@ -89,39 +111,36 @@
 
 .ds4 .trigger.right {
     float: right !important;
-    background-position: 0 0 !important;
 }
 
-
-/* L2/R2 GEDRÜCKT */
 
 .ds4 .trigger.pressed {
     background: #008cff !important;
 
     box-shadow:
-        0 0 12px rgba(0,140,255,.95),
-        inset 0 3px 7px rgba(255,255,255,.2) !important;
+        0 0 14px rgba(0,140,255,.95),
+        inset 0 3px 6px rgba(255,255,255,.25) !important;
 }
 
 
 /* =========================================
-   L1 / R1
+   L1 + R1
    ========================================= */
 
 .ds4 .bumpers {
     position: absolute !important;
 
     width: 520px !important;
-    height: 31px !important;
+    height: 30px !important;
 
     left: 143px !important;
-    top: 76px !important;
+
+    /* ebenfalls deutlich weiter hoch */
+    top: 38px !important;
 
     transform: none !important;
 }
 
-
-/* L1 + R1 Grundform */
 
 .ds4 .bumper {
     width: 105px !important;
@@ -132,7 +151,7 @@
 
     border: 2px solid #008cff !important;
 
-    border-radius: 10px 10px 7px 7px !important;
+    border-radius: 10px 10px 6px 6px !important;
 
     opacity: 1 !important;
 
@@ -140,28 +159,20 @@
 
     box-shadow:
         inset 0 -3px 6px rgba(0,0,0,.65),
-        0 0 4px rgba(0,140,255,.3) !important;
+        0 0 5px rgba(0,140,255,.35) !important;
 }
 
 
-/* Position links / rechts */
-
 .ds4 .bumper.left {
     float: left !important;
-    transform: none !important;
 }
 
 .ds4 .bumper.right {
     float: right !important;
-    transform: none !important;
 }
 
 
-/* L1/R1 GEDRÜCKT */
-
 .ds4 .bumper.pressed {
-    opacity: 1 !important;
-
     background: #008cff !important;
 
     box-shadow:
@@ -171,11 +182,112 @@
 
 
 /* =========================================
-   SHARE / OPTIONS
+   SHARE + OPTIONS
    ========================================= */
 
 .ds4 .arrows {
-    transform: translateY(-15px) !important;
+    position: absolute !important;
+
+    width: 350px !important;
+    height: 30px !important;
+
+    left: 228px !important;
+    top: 134px !important;
+
+    transform: none !important;
+}
+
+
+/* SHARE */
+.ds4 .back {
+    position: absolute !important;
+
+    left: 0 !important;
+
+    width: 62px !important;
+    height: 22px !important;
+
+    opacity: 1 !important;
+
+    background: #17191f !important;
+    background-image: none !important;
+
+    border: 2px solid #008cff !important;
+    border-radius: 9px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* OPTIONS */
+.ds4 .start {
+    position: absolute !important;
+
+    right: 0 !important;
+
+    width: 62px !important;
+    height: 22px !important;
+
+    opacity: 1 !important;
+
+    background: #17191f !important;
+    background-image: none !important;
+
+    border: 2px solid #008cff !important;
+    border-radius: 9px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Beschriftung SHARE */
+.ds4 .back::after {
+    content: "SHARE";
+
+    display: block;
+
+    color: #008cff;
+
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    font-weight: bold;
+
+    text-align: center;
+
+    line-height: 18px;
+}
+
+
+/* Beschriftung OPTIONS */
+.ds4 .start::after {
+    content: "OPTIONS";
+
+    display: block;
+
+    color: #008cff;
+
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    font-weight: bold;
+
+    text-align: center;
+
+    line-height: 18px;
+}
+
+
+/* SHARE / OPTIONS gedrückt */
+.ds4 .back.pressed,
+.ds4 .start.pressed {
+    background: #008cff !important;
+
+    box-shadow: 0 0 12px rgba(0,140,255,.9) !important;
+}
+
+
+.ds4 .back.pressed::after,
+.ds4 .start.pressed::after {
+    color: white !important;
 }
 
 
@@ -184,35 +296,25 @@
    ========================================= */
 
 .ds4 .touchpad.pressed {
-    border-radius: 12px !important;
-
     box-shadow:
         inset 0 0 0 3px #008cff,
         0 0 14px rgba(0,140,255,.7) !important;
+
+    border-radius: 12px !important;
 }
 
 
 /* =========================================
-   PRESSED EFFECT - FACE BUTTONS
+   BUTTON PRESS EFFECTS
    ========================================= */
 
 .ds4 .button.pressed {
     filter: brightness(1.35) !important;
 }
 
-
-/* =========================================
-   PRESSED EFFECT - D-PAD
-   ========================================= */
-
 .ds4 .face.pressed {
     filter: brightness(1.35) !important;
 }
-
-
-/* =========================================
-   PRESSED EFFECT - STICKS
-   ========================================= */
 
 .ds4 .stick.pressed {
     filter: brightness(1.25) !important;
