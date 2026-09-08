@@ -4,3 +4,12 @@
     width: 806px !important;
     height: 598px !important;
 }
+/* L2 + R2 */
+.ds4 .trigger {
+    opacity: 1 !important;
+}
+
+/* L1 + R1 */
+.ds4 .bumper {
+    opacity: 1 !important;
+}
