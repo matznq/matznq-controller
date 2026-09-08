@@ -1,12 +1,14 @@
-/* MATZNQ – BLACK PS4 BASE */
+/* MATZNQ – BLACK PS4 CUSTOM SKIN */
 
+/* Custom Controller Base */
 .controller.ds4 {
-    background-image: url("https://matznq.github.io/matznq-controller/base.custom.png") !important;
+    background: url("https://matznq.github.io/matznq-controller/base.custom.png") no-repeat !important;
     background-size: 806px 598px !important;
-    background-repeat: no-repeat !important;
+    width: 806px !important;
+    height: 598px !important;
 }
 
-/* Normale schwarze GPV-Tasten behalten */
+/* Originale GPV Trigger, Bumper, Buttons, Sticks und D-Pad behalten */
 .ds4 .trigger,
 .ds4 .bumper,
 .ds4 .button,
@@ -14,4 +16,3 @@
 .ds4 .face {
     filter: none !important;
 }
-
