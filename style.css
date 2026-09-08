@@ -1,49 +1,16 @@
-/* MATZNQ – PS4 GamePad Viewer Skin */
+/* MATZNQ – BLACK PS4 BASE */
 
-.controller.ds4.white {
+.controller.ds4 {
     background-image: url("https://matznq.github.io/matznq-controller/base-custom.png") !important;
     background-size: 806px 598px !important;
     background-repeat: no-repeat !important;
+}
+
+/* Normale schwarze GPV-Tasten behalten */
+.ds4 .trigger,
+.ds4 .bumper,
+.ds4 .button,
+.ds4 .stick,
+.ds4 .face {
     filter: none !important;
-}
-/* MATZNQ – D-Pad + Sticks */
-
-.ds4.white .face,
-.ds4.white .stick {
-    filter: brightness(0) saturate(100%)
-            invert(43%) sepia(99%)
-            saturate(4780%) hue-rotate(193deg)
-            brightness(104%) contrast(105%) !important;
-}
-
-.ds4.white .face.pressed,
-.ds4.white .stick.pressed {
-    filter: brightness(0) saturate(100%)
-            invert(58%) sepia(100%)
-            saturate(3500%) hue-rotate(185deg)
-            brightness(120%) contrast(110%)
-            drop-shadow(0 0 6px #008cff) !important;
-}
-/* MATZNQ – L1/R1 + L2/R2 */
-
-.ds4.white .trigger,
-.ds4.white .bumper {
-    filter: brightness(0) saturate(100%)
-            invert(43%) sepia(99%)
-            saturate(4780%) hue-rotate(193deg)
-            brightness(104%) contrast(105%) !important;
-}
-
-.ds4.white .trigger {
-    opacity: 0 !important;
-}
-
-.ds4.white .trigger.pressed,
-.ds4.white .bumper.pressed {
-    opacity: 1 !important;
-    filter: brightness(0) saturate(100%)
-            invert(58%) sepia(100%)
-            saturate(3500%) hue-rotate(185deg)
-            brightness(125%) contrast(110%)
-            drop-shadow(0 0 6px #008cff) !important;
 }
