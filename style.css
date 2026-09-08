@@ -22,3 +22,15 @@
 .ds4 .abxy {
     transform: translate(55px, -68px) !important;
 }
+.ds4 .triggers {
+    transform: translateY(28px) !important;
+}
+
+.ds4 .bumpers {
+    transform: translateY(28px) !important;
+}
+
+.ds4 .trigger,
+.ds4 .bumper {
+    opacity: 1 !important;
+}
