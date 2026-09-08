@@ -24,3 +24,26 @@
             brightness(120%) contrast(110%)
             drop-shadow(0 0 6px #008cff) !important;
 }
+/* MATZNQ – L1/R1 + L2/R2 */
+
+.ds4.white .trigger,
+.ds4.white .bumper {
+    filter: brightness(0) saturate(100%)
+            invert(43%) sepia(99%)
+            saturate(4780%) hue-rotate(193deg)
+            brightness(104%) contrast(105%) !important;
+}
+
+.ds4.white .trigger {
+    opacity: 0 !important;
+}
+
+.ds4.white .trigger.pressed,
+.ds4.white .bumper.pressed {
+    opacity: 1 !important;
+    filter: brightness(0) saturate(100%)
+            invert(58%) sepia(100%)
+            saturate(3500%) hue-rotate(185deg)
+            brightness(125%) contrast(110%)
+            drop-shadow(0 0 6px #008cff) !important;
+}
