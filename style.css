@@ -1,3 +1,8 @@
+/* MATZNQ – PS4 GamePad Viewer Skin */
+
 .controller.ds4.white {
-    filter: hue-rotate(220deg) saturate(3) brightness(0.75);
+    background-image: url("https://matznq.github.io/matznq-controller/base-custom.png") !important;
+    background-size: 806px 598px !important;
+    background-repeat: no-repeat !important;
+    filter: none !important;
 }
