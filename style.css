@@ -6,3 +6,20 @@
     background-repeat: no-repeat !important;
     filter: none !important;
 }
+/* MATZNQ – D-Pad + Sticks */
+
+.ds4.white .face {
+    filter: hue-rotate(190deg) saturate(4) brightness(0.8) !important;
+}
+
+.ds4.white .face.pressed {
+    filter: hue-rotate(190deg) saturate(5) brightness(1.4) !important;
+}
+
+.ds4.white .stick {
+    filter: hue-rotate(190deg) saturate(4) brightness(0.75) !important;
+}
+
+.ds4.white .stick.pressed {
+    filter: hue-rotate(190deg) saturate(5) brightness(1.35) !important;
+}
