@@ -33,4 +33,8 @@
 .ds4 .trigger,
 .ds4 .bumper {
     opacity: 1 !important;
+    background: #17191f !important;
+    width: 145px !important;
+    height: 32px !important;
+    border-radius: 14px 14px 7px 7px !important;
 }
