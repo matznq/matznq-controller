@@ -1,20 +1,3 @@
-/* MATZNQ SHELL OVERLAY */
-
-.controller.ds4.edit {
-    position: relative !important;
-    width: 806px !important;
-    height: 598px !important;
-
-    /* verhindert Half-Controller-Cropping */
-    margin-top: 0 !important;
-}
-
-
-/* falls GPV die "half"-Klasse setzt */
-.controller.ds4.edit.half,
-.controller.ds4.half {
-    margin-top: 0 !important;
-}
 
 
 /* MATZNQ-Gehäuse */
@@ -39,14 +22,4 @@
 }
 
 
-/* Originale GPV-Tasten bleiben darüber */
-.ds4 .triggers,
-.ds4 .bumpers,
-.ds4 .touchpad,
-.ds4 .arrows,
-.ds4 .abxy,
-.ds4 .sticks,
-.ds4 .dpad,
-.ds4 .meta {
-    z-index: 5 !important;
-}
+
