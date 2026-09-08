@@ -1,5 +1,6 @@
 .controller.ds4.edit {
-    background: red !important;
+    background: url("https://matznq.github.io/matznq-controller/base.custom.png?v=2") no-repeat 0 0 !important;
+    background-size: 806px 598px !important;
     width: 806px !important;
     height: 598px !important;
 }
